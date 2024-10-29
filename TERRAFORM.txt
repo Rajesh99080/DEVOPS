@@ -720,3 +720,72 @@ tags = {
 Name = "${each.key}"
 }
 } 
+
+
+
+1. Explain the difference between Terraform and other Infrastructure as Code (IaC) tools like Ansible, Puppet, and Chef.
+
+
+Terraform is used to create and manage cloud infrastructure (like servers and networks) and replaces resources if changes are needed to     keep everything consistent.
+
+Ansible, Puppet, and Chef are used to configure and manage servers (like installing software or setting permissions) and typically update systems directly without replacing them.
+
+In short: Terraform is for setting up infrastructure; the others are for configuring and maintaining it.
+
+1a. What is Provisioning?
+Provisioning is the process of setting up and preparing resources so that they are ready to be used. Think of it as getting everything in place before you can start using something.
+
+
+1b. Definition
+
+Mutable Infrastructure: This refers to systems that can be modified after they have been deployed. You can change configurations, apply updates, or install new software directly on existing servers without needing to replace them.
+
+Terraform is a powerful tool that enables the implementation of immutable infrastructure, a model where resources are not modified after deployment. Instead, any changes or updates require the creation of new resources. Here’s how this works in detail:
+
+Immutable Infrastructure: This is a model where once a server or resource is deployed, it cannot be changed or modified. If an update or change is needed, a new instance is created, and the old one is decommissioned.
+
+Declarative Tool: Terraform Meaning
+Terraform is a declarative tool used for managing infrastructure as code (IaC). Being declarative means that users specify what they want their infrastructure to look like, rather than detailing how to achieve that outcome
+
+
+How It Works
+State Management: Terraform maintains a state file that records the current state of your infrastructure. This allows it to track what resources exist and what changes need to be made when configurations are updated. For instance, if you change the number of virtual machines from five to ten in your configuration, Terraform recognizes that it needs to create five additional instances.
+Execution Plan: Before applying changes, Terraform generates an execution plan that outlines what actions will be taken based on your configuration. This helps users understand the impact of their changes before they are applied.
+
+
+2. How do you manage state in Terraform, and what are some best practices for state management?
+
+  
+3. Describe the purpose of Terraform modules and how you would use them in a project.
+
+
+
+
+4. How do you handle secrets and sensitive data in Terraform configurations?
+
+5. Explain the Terraform workflow, including the roles of terraform init, terraform plan, terraform apply, and terraform destroy.
+6. What are Terraform providers, and how do you configure them?
+7. Describe how to use the terraform import command.
+8. How do you manage multiple environments (e.g., development, staging, production) in Terraform?
+9. What are Terraform workspaces, and how do they help in managing infrastructure?
+10. Explain how you can use Terraform to manage dependencies between resources.
+11. How do you perform resource tainting and why is it useful?
+12. Describe the process of upgrading a Terraform provider.
+13. How do you handle Terraform drift detection and remediation?
+14. What are some strategies for ensuring high availability and disaster recovery with Terraform?
+15. Explain the use of terraform fmt and terraform validate in maintaining code quality.
+16. How do you manage infrastructure versioning and collaboration in Terraform?
+17. Describe a scenario where you encountered a complex Terraform issue and how you resolved it.
+18. Explain the difference between terraform apply and terraform apply -auto-approve.
+19. How do you integrate Terraform with CI/CD pipelines?
+20. What are some common Terraform gotchas and how do you avoid them?
+21. How do you use Terraform with multi-cloud deployments?
+22. Describe how you would handle a situation where a Terraform apply failed in the middle of execution.
+23. How do you manage provider version constraints in Terraform configurations?
+24. Explain the purpose and use of terraform graph.
+25. How do you configure remote backends in Terraform, and why are they useful?
+26. Describe how to use the Terraform Registry.
+27. How do you handle conditional logic in Terraform?
+28. What are some best practices for writing reusable and maintainable Terraform code?
+29. Explain the purpose and usage of data sources in Terraform.
+30. How do you handle breaking changes introduced in new Terraform versions?
