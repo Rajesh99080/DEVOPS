@@ -493,7 +493,7 @@ LOOKUPS: this module used to get data from files, db and key-values
 cat creds.txt
 user=raham
 
-STRATAGIES:
+STRATAGIES:its a way of working with ansible playbooks
 
 LINEAR: execute tasks sequencially
 FREE: execute all tasks on all node at same time
