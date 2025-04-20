@@ -322,6 +322,8 @@ here we use docker-compose/compose file.
 it will be on yaml format.
 we use key-value pair (dictionary) (.yml or .yaml)
 used to manage multiple servivces with help of a file.
+when ever we download a file we have to to bin folder
+we have to give bin permission
 
 
 SETUP:
