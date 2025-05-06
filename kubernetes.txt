@@ -12,7 +12,7 @@ A: APPLICATION
 
 NOTE: k8s dont communicate with containers.
 it communicate with pods.
-
+INFRA: Resources used to run our application is called infra
 COMPONENTS:
 MASTER NODE:
 1. API SERVER: its for communicating with cluster, it takes command executes and gives output.
