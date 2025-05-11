@@ -166,10 +166,19 @@ Note: we can restore only tracked files.
 
 MERGE:
 adding the files blw one branch to another branch
+git merge is a Git command used to combine the history of two branches by creating a new merge commit, preserving the original history of both branches.
+It keeps all commits from both branches.
+
+The commit history becomes branched and merged.
 git merge branch_name
 
 REBASE:
 adding the files blw one branch to another branch
+git rebase is a Git command that moves or re-applies your branch's commits on top of another branch to create a linear and cleaner history.
+It rewrites commit history to look like your work was based on the latest changes.
+
+It helps avoid unnecessary merge commits.
+
 git rebase branch_name
 
 
