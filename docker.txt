@@ -86,7 +86,7 @@ apt update -y
 apt install git maven apache2 tree -y
 touch file{1..5}
 
-docker commit cont1 raham
+docker commit cont1 raham ---by using these command we can modify the images and we can create new container again
 docker run -it --name cont2 raham
 
 check version now
