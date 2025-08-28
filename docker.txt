@@ -203,6 +203,7 @@ volume is nothing but a folder inside a container.
 we can share a volume from one container to another.
 the volume contains the files which have data.
 we can attach the single volume to multiple containers.
+we can attach multiple voluems  to  single container
 but at a time we can attach only one volume to one container.
 volumes are decoupled (loosely attached)
 if we delete the container volume will not be deleted.
@@ -500,3 +501,4 @@ docker run -itd --name cont3 --cpus="0.5" --memory="500mb" ubuntu
 docker inspect cont3
 docker stats
 docker top cont3
+
