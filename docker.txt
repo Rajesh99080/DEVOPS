@@ -423,6 +423,11 @@ hostnamectl set-hostname manager/worker-1/worker-2
 manager node: docker swarm init
 copy the token to all worker nodes
 
+
+limitatons;
+ docker swarm should have 20 nodes only
+ docker swarm should have 7 master nodes 13 worker nodes (n-1)/2 or n/2 -1
+
 SERVICES:
 its a way of exposing the application in docker.
 with services we can create multiple copies of same container.
@@ -437,6 +442,7 @@ docker service scale train=10	: to scale the services
 docker service scale train=6	: to scale the services
 docker service rollback train	: to go back to previous state
 docker service rm train		: to delete the train services
+docker constarin: to it used to update our data in particular node only
 
 SELF HEALING: automatically recreates container itself.
 
@@ -501,4 +507,5 @@ docker run -itd --name cont3 --cpus="0.5" --memory="500mb" ubuntu
 docker inspect cont3
 docker stats
 docker top cont3
+
 
