@@ -33,7 +33,14 @@ DVCS: DISTRIBUTED VERSION CONTROL SYSTEM
 EX: GIT: it can store code on Multiple repo.
 
 
-ROLLBACK: Going back to the previous version of the application.
+ROLLBACK: Going back to the previous version of the application
+
+Git Clone: is a Git command used to copy a remote repository to your local machine.
+           Think of it as downloading a full project, including all its files, history, and branches.
+
+Git Pull: is a Git command used to update your local repository with changes from a remote repository.
+          Think of it as syncing your local project with the latest changes from others
+
 
 
 STAGES:
@@ -75,11 +82,16 @@ git config user.email "raham@gmail.com"
 
 NOTE: this user and email will be replicated to new commits only.
 
-
+ 
 Git show: used to show the files which are attached to commits.
 git log --online
 git show commit_id
-
+git reset : files will delete in loacl and staging area but availabile in working area 
+               git reset commid_id == git reset HEAD~2   both commands are same here 2 represent no files we want to delete
+git reset --soft commit-id : it will delete only in local repo but available in working and staging
+git reset --hard comiit id : it will delete files in loacl repo ,statging and working no data will be available
+     
+  
 
 BRANCHES:
 It is a individaual line of developemt.
@@ -99,6 +111,13 @@ git checkout movies	: to switch blw the branches
 git checkout -b dth	: to create and switch dth at same time
 git branch -m old new	: to rename a branch
 git branch -D recharge	: to delete a branch
+ different types of branches in realtime 
+     master: it is used for producton
+     Dev :  development
+    feature: new features 
+    Hotfix:  production related issues
+    sprint or relase: relese branch for release purpose minor relse for 15 days major release for 3 months
+
 
 NOTE: to recover the delete branch
 
@@ -239,5 +258,6 @@ Diff blw git clone vs git fork ?
 Diff blw git revert vs git restore ?
 merge conflict & how to resolve ?
 what is git stash ?
+
 
 
