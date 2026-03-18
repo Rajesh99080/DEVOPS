@@ -1,0 +1,161 @@
+sudo su - : to switch from ec2 user to root user
+
+sudo -i  : to switch from ec2 user to root user
+
+logout : to switch from root user to switch user
+
+ctrl + d : to switch from root user to switch user
+
+cat /proc/cpuinfo or lscpu  : to show cpu info
+
+lsmem or cat /proc/cpuinfo  df -h : to show memory info
+
+fdisk -l or lsblk : to show the volume info
+
+hostname -i : to know the ip address
+
+ifconfig : to know the ip address
+
+clear or ctrl + l : to clear the screen
+
+touch filename : it is used to create a file
+
+vi filename or nano filename: it is used to create a file and edit content the inside the file 
+
+cat : it is used to read the file or show the data present in file
+
+more filename : it is used read the file or show the data present in it
+
+cat >> filename : to write the content
+
+enter ctrl + d : to come out of the file in cat 
+
+ls : list of file
+
+cp file1 file2 : copy the content from file2 to file2
+
+mv file1 file2 : it rename the content filename
+
+rm * -f : to delete all  the files forcefully
+
+rm file1 -f : to remove the file forcefully
+
+rm file1 : to remove the file 
+
+touch file{ 1..100}: to create the 100 files at a time
+
+cat  file1  >>file2 : to copy content from file1 to file2 (with out overridding) 
+
+
+HOW TO CHECK THE PERFOMANCE OF SERVER:
+
+top 
+
+ htop: yum install htop -y
+
+
+head file1 : to show the first 10 lines of file
+
+head -5 file1 : it show the first 5  line of the file
+
+tail file1 : it shows the bottom 10 line of the file
+
+tail -5 file1 : it show the bottom 5 lines of the file
+
+sed -n '5,15p' file1 : to print from the middle
+
+wc filename(wordcount) : to show line ,words,charecters
+
+types of editors
+ vim/vi : it is used to edit the content
+ when we enter the editor page we must give insert(i) to edit that means we have to give (i)
+to come  out of the editor we must have esc :wq!
+for every letter before we have to use ESC
+A : end of the line
+I : starting of the line
+O : new line above
+o : new line below
+gg : top of the file
+shift g : last line of the file
+:set number : to know the number of lines in file
+:n  : to go specific line
+yy  : to copy
+5yy : to copy 5 lines
+p :to paste
+6pp : to paste 6 times
+dd : to delete
+3dd : to delete 3 line 
+u : undo
+ctrl r : redo
+/ word name : to search for particular word 
+
+
+TYPES OF FILES
+- : REGULAR FILE
+b : blocked file
+c : character file
+d  :directory
+l  :linked file
+
+PERMISSIONS 
+
+r READ : 4
+w WRITE : 2
+x EXCUTEBLE : 1
+
+
+USER : rw- : 6
+GROUP : r-- : 4
+others : r-- : 4 
+
+chmod value filename
+we can also do in these way chmod u=rw,g=rx,o=rwx filename
+
+chmod + r filename : read permission to all
+chmod + x filename : write permission to all
+write permission will not accept the data
+
+GREP : it  is used to seach for the word
+grep word filename : it is used to search particular word
+grep word filename -i : by using -i it will not consider case sensitive
+grep word filename -ic : to count the word(-c : count)
+grep word filename -v: to print the lines without raham word (-v : avoid) 
+grep 'word1\|word2' filename : to filter multiple words same time
+
+cat filename | grep word : to search for the word
+
+SED : steam editor
+
+it is used to replace the word
+
+sed 's/word1/word2/' filename  to replace word one with word2
+
+sed 's/word1/word2/;s/word3/word4/' filename : to repalce for multiple words
+
+sed  '2c abc' filename : to replace a line
+
+sed -n '5,12p' filename : to print from line 5 to 12
+
+sed -n '10p' filename : to print particular line
+
+'%s/word1/word2/' : to replace a word inside of file
+
+'%s/word1/word2/'g : to replace a word inside a file g is used if we have repated files
+
+CREATING USER:
+normal user to super user
+
+useradd username : to create user
+cat /etc/passwd : to list the user
+passwd  type passwd : to set paswd
+visudo --> :100 --> 100 -->yy & p root = raham --> save
+su - raham
+sudo user add
+
+
+
+
+
+  
+
+ll : long list of files
