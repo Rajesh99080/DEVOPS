@@ -114,7 +114,9 @@ LABEL 		: to attach our tags/labels
 ENV		: variables which run inside conatiner (image)
 ARGS		: variables which run outside conatiner(containers)
 VOLUME		: used to create volume for conatiner
-EXPOSE		: used to give port number
+EXPOSE		: used to give port number    
+
+
 
 EX: -1
 
@@ -124,6 +126,13 @@ RUN apt install git maven tree apache2 -y
 
 Build : docker build -t netflix:v1 .
 cont: docker run -it --name cont3 netflix:v1
+
+To change docker filename 
+mv Dockerfile Dockerfile_One
+
+
+to create image using new image
+ docker build -f Dockerfile_one .
 
 
 ex-2:
